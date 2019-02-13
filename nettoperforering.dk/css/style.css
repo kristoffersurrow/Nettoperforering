@@ -1,0 +1,332 @@
+body { margin:0px;
+		background-color:#333333}
+
+a:hover { text-decoration:none}
+
+header { background-color:#333333}
+
+h4 { font-size:16px}
+
+	/*Grafik i toppen*/
+svg {position:absolute; left:0px; top:0px}
+
+svg path { fill:white }
+
+	/* Quick link ring op */
+#fixedPhone{ display:none; position:fixed; top:50px; right:50px; z-index:1; 
+			background-color:#333333}
+
+#fixedPhone a{ color:#e5e5e5} 
+
+@media only screen and (max-width: 610px){ #fixedPhone{ display:block}}
+
+	/* Navigations Menu*/
+#navMenu { font-size:17px; padding:10px; margin-bottom:0px}
+
+#navMenu button:active,
+#navMenu button { border:solid medium rgba(0,94,167,0.9);
+				height:45px; width:100px}
+
+
+#navbarDropdownMenuLink { color:#e5e5e5 }
+
+.dropdown-menu { background-color:#e5e5e5}
+
+#navbarDropdownMenuItem { color:black; font-size:17px}
+
+.nav-link:hover,
+.dropdown-item:hover { background-color:rgba(102,102,102,1)}
+
+#navMenu button { margin-left:auto; margin-right:auto}
+
+@media only screen and (min-width: 992px){#navMenu { position:absolute; right:34px; top:90px }}
+
+	/* Sektioner */
+.produktSection { position:static;
+				border-top:rgba(0,94,167,0.9) medium solid;}
+
+.sectionBg { min-height:700px}
+
+.h1Holder { text-align:center; 
+			color:#e5e5e5;
+			margin-top:30px}
+
+.h1Holder h1 { font-size:30px; font-weight:700}
+
+.buttonHolder { width:90%; 
+				margin-left:auto; margin-right:auto; margin-top:50px;
+				text-align:center}
+
+.sideInfoText { padding:50px;
+				color:#e5e5e5;
+				font-size:17px;
+				text-align:center}
+
+	/*Ikoner*/
+.glyphicon-chevron-right, .fa-chevron-right {float:right; padding-top:4px}
+
+span.big { width:65px; height:65px}
+
+span.bigger {width:75px: height:75px}
+
+.glyphicon.big, .fas.big { font-size:20px; border:solid #e5e5e5 medium; border-radius:35px; padding:20px; color:#e5e5e5}
+
+.glyphicon.bigger, .fas.bigger { font-size:30px; border:solid #e5e5e5 medium; border-radius:35px; padding:20px; color:#e5e5e5}
+
+	/*Knappen*/
+.button {width:100%;height:50px; color:#e5e5e5; font-size:17px; font-weight:600; cursor:pointer}
+
+.asideButton {  margin-top:10px; background-color:rgba(102,102,102,1); border:none }
+
+
+	/* Section PP */
+#perforeredePlader {background-image:url(../img/perforering.jpg); background-repeat: no-repeat; background-position: center center; background-size:cover}
+
+
+	/* Section SM */
+#straekmetal {background-image:url(../img/expandedmetal3.jpg); background-repeat: no-repeat; background-position: center center; background-size:cover}
+
+	/* Section SN */
+#svejstenet {background-image:url(../img/svejstenet.jpg); background-repeat: no-repeat; background-position: center center; background-size:cover}
+
+	/* Section GR */
+#gitterriste {background-image:url(../img/gitterriste3.jpg); background-repeat: no-repeat; background-position: center center; background-size:cover}
+
+	/* Aside */
+.produktInfo { background-color:rgba(0,94,167,0.9); 
+			width:35%; min-width:360px; min-height:inherit }
+@media only screen and (max-width: 1000px){.produktInfo { width:50% } }
+@media only screen and (max-width: 610px){.produktInfo { width:100% } }
+
+	/* Undermenu for produkt */
+#underMenu {display:flex;}
+#underMenu .elementDiv {width:25%; min-height:350px;
+						background-color:#54595F;
+						text-align:center}
+
+@media only screen and (max-width: 1220px){#underMenu { display:block}#underMenu .elementDiv { float:left; width:50% } }	
+@media only screen and (max-width: 610px){#underMenu { display:block}#underMenu .elementDiv { float:left; width:100% } }					
+
+.elementIcon { padding:20px;
+			margin-top:35px}
+
+.elementText h3 {padding:20px;
+				Color:#e5e5e5; font-size:22px}
+
+.elementButton button { width:90%; 
+					background-color:rgba(0,94,167,0.9); border:none; border-radius:5px;}
+
+ /* Luftprocentberegnere */
+#beregner { height:400px;
+			background-color:#54595F;
+			display:none;
+			font-size:17px; color:#e5e5e5;
+			padding-left:100px;
+			padding-top:20px}
+
+#beregner input { color:black}
+
+#selectForm{ text-align-last:center;  color:#e5e5e5;
+		width:90%;
+		background-color:rgba(0,94,167,0.9); 
+		border:none; border-radius:5px;
+		cursor:pointer}
+
+
+	/* Andre */
+.infoLeft { float:left}
+
+.infoRight { float:right}
+
+.spacer { height:50px}
+
+.divider { height:25px;
+		border-bottom:thin solid #54595F;
+		margin-bottom:24px}
+
+#greyDivider { background-color:#54595F}
+.side-by-side { display:inline; position:static; min-height:inherit}
+
+	/* Carousels */
+#slideCarouselOnMedia { display:none}
+
+@media only screen and (max-width: 1000px){#slideCarouselOnMedia { display:block; width:100%; margin-left:auto; margin-right:auto} 
+#slideCarousel1, #slideCarousel2 { display:none}
+}
+
+#slideCarousel1 { width:50%; float:left; min-height:inherit}
+
+#slideCarousel2 { width:50%; float:right; min-height:inherit}
+
+#slideCarouselOnMedia img,
+#slideCarousel1 img,
+#slideCarousel2 img { width:100%; height:100%}
+
+/* Footer */
+.footer { min-height:100px;
+		background-color:#54595F; display:flex}
+
+#footerImage,
+#footerText,
+#footerIcon { text-align:center; margin:auto }
+
+#footerText h4 {color:#e5e5e5; font-weight:400}
+
+#footerIcon { width:15%}
+
+#footerImage { width:15%}
+
+#footerText { width:70%}
+
+@media only screen and (max-width: 767px) { #footerIcon,#footerImage { display:none}}
+
+
+#footerImage img { width:70%}
+
+/* Mønsterguiden */
+.vareinfo ,
+.vareinfo td { border:none}
+
+h3 { color:rgba(36,41,48,0.9)}
+
+
+#infodiv,
+#formdiv { width:90%; min-width:330px;
+		margin-left:auto; margin-right:auto;}
+		
+
+
+#textarea { vertical-align:top}
+
+#entry-content {width:100%; 
+				text-align:center; 
+				margin-left:auto; margin-right:auto; margin-top:2%; margin-bottom:1%}
+
+
+.contentdiv{display:inline-block; 
+			width:40%; min-width:350px; 
+			vertical-align:top;  
+			margin:2%}
+
+#pdfdiv{ height: 100px; width:100%;
+		float:none; 
+		display:inline-block; 
+		text-align:center; 
+		margin-left:auto; margin-right:auto; margin-top:50px}
+
+.infotable td {width:50%;}
+
+#form{ 	text-align:left; 
+		margin-left:4%; margin-right:4%; 
+		width:92%; 
+		border:none; border-radius:5px;}
+
+#form input.text { width:100%; height:30px; 
+			padding:10 15 10 5;
+			border-width:1px}
+
+#form input[name="submit"] { text-align:center}
+
+#submit {width:100%; 
+		background-color:rgba(0,94,167,0.9);}
+
+.error_form {color:red;
+			font-size:13px;
+			float:right}
+
+
+
+.vaelger {	background-color:rgba(94,94,94,0.2); 
+			height:50px; width:90%; 
+			margin-left:auto; margin-right:auto; margin-top:50px; margin-bottom:10px; 
+			text-align:center;}
+	
+.viser { min-height:250px; width:85%; 
+		margin-left:auto; margin-right:auto; 
+		background-color:rgba(204,204,204,0.4);
+		display:none;
+		position:relative}
+	 
+.billedeViser{ border:thin solid rgba(51,51,51,1);
+			box-sizing: border-box;
+    		-moz-box-sizing: border-box;
+    		-webkit-box-sizing: border-box;
+			border:thin solid rgba(0,0,0,1);}
+
+
+
+.active {background-color:rgba(94,94,94,0.9);
+		display:block}
+
+.open { display:block}			
+
+
+#buttonDiv { text-align:center; vertical-align:text-top}
+
+#buttonDiv button { width:25%; min-width:175px; 
+					font-size:15px; color:#e5e5e5;
+					background-color:rgba(153,153,153,1)}
+
+
+.selected { border: thick solid rgba(0,94,167,0.9);
+		}
+
+.selected td { background-color:rgba(0,94,167,0.2)}
+
+.vaelger p{ padding:10px ; 
+			color:rgba(255,255,255,1); 
+			margin-left:auto; margin-right:auto;
+			font-size:15px; color:#e5e5e5}
+
+.arrow-down { float:right; 
+			height:30px; width:30px; 
+			margin-right:20px; 
+			opacity:0.2;}
+
+.opacity { opacity:1}
+
+figure {text-align:center; 
+		width:16%; 
+		height:16%;
+		margin-left:6px;
+		margin-bottom:10px; 
+		display:inline-block; 
+		cursor: pointer}
+
+.alignDiv { margin-left:auto; margin-right:auto; width:96%}
+
+#beforeTableText { text-align:center;
+				padding:10px;
+				font-size:15px}
+
+#tableDiv { overflow:hidden}
+
+#pladeTable { font-size:13px; width:98%; margin-left:1%; margin-right:1%;}
+
+#pladeTable tr:hover { background-color:rgba(0,94,167,0.2)}
+
+#pladeTable td { cursor:pointer}
+
+
+@media only screen and (max-width: 1085px){ .tabletHide { display:none }}
+
+@media only screen and (max-width: 767px){ .mobileHide { display:none} 
+
+#buttonDiv button { width:40%; min-width:175px;} }
+
+.mobileShow { display:none}
+
+@media only screen and (max-width: 767px){ .mobileShow { display:block}}
+
+@media only screen and (max-width: 415px){ 
+.vaelger{	width:98%; 
+			 }
+.viser { width:96%; 
+		}			 
+#pladeTable { width:100%; margin-left:auto; margin-right:auto;}
+}
+
+figcaption{ margin-top:-10px; 
+			font-weight:500;
+			white-space:nowrap;
+			overflow:ellipsis}

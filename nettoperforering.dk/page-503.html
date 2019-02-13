@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="img/favicon.ico">
+
+    <!-- Bootstrap CSS v4 -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">    
+    
+    <!-- Animations -->
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+   
+    <!-- CSS -->
+	<link href="css/style.css" type="text/css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+ 
+	<title>Netto Perforering</title>
+</head>
+
+<body>
+<div id="page">
+
+	<header>
+    	<a href="index.html"><img src="img/Logo_Skanderborg1.png" alt="Logo Netto Perforering Skanderborg" title="Netto Perforering" id="topLogo" class="animated bounceInLeft">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 150" preserveAspectRatio="none">
+		<path class="" style="opacity:0.30" d="M0 0L2600 0 2600 69.1 0 0z"></path>
+		<path class="" style="opacity:0.15" d="M0 0L2600 0 2600 69.1 0 69.1z"></path>
+		<path class="" style="opacity:0.10" d="M2600 0L0 0 0 130.1 2600 69.1z"></path>
+		</svg></a>
+		
+  
+  
+  <!-- Nav Button -->      
+<nav id="navMenu" class="navbar navbar-expand-md navbar-dark bg-faded">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a id="navbarDropdownMenuLink" class="nav-link" href="index.html">Forside</a>
+      </li>
+     
+      <li class="nav-item active dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Produkter
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a id="navbarDropdownMenuItem" class="dropdown-item" href="perfplader.html">Perforerede Plader</a>
+          <a id="navbarDropdownMenuItem" class="dropdown-item" href="#">Strækmetal</a>
+          <a id="navbarDropdownMenuItem" class="dropdown-item" href="#">Svejste Net</a>
+          <a id="navbarDropdownMenuItem" class="dropdown-item" href="#">Gitterriste</a>
+        </div>
+      </li> 
+      <li class="nav-item">
+        <a id="navbarDropdownMenuLink" class="nav-link" href="#">Videreforarbejdning</a>
+      </li>
+      <li class="nav-item">
+        <a id="navbarDropdownMenuLink" class="nav-link" href="#">Prestige Projekter</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Om Os
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a id="navbarDropdownMenuItem" class="dropdown-item" href="#">Om Netto Perforering</a>
+          <a id="navbarDropdownMenuItem" class="dropdown-item" href="#">Personale</a>
+          <a id="navbarDropdownMenuItem" class="dropdown-item" href="#">Ledige Stillinger</a>
+         </div>
+       <li class="nav-item">
+        <a id="navbarDropdownMenuLink" class="nav-link" href="#">Kontakt</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div id="fixedPhone"><a href="tel:70221333"><span class="fas big fa-phone"></span></a></div>
+	</header>
+  
+<div id="content">  
+
+
+
+
+
+
+			
+			<div id="leveringvalg" class="vaelger active">
+            <p>Levering</p></div> 
+            <div id="buttonDiv">
+            <button type="button" id="billedeViser0" class="billedeViser" title="Omg." onClick="Choose(this,'name.php',0);smoothScroll('materialevalg')"><p>Varer i Skanderborg</p><span class="mobileHide">(Omgående Leveringstid)</span></button>
+            <button type="button" id="billedeViser0" class="billedeViser" title="" onClick="Choose(this,'name.php',0);smoothScroll('materialevalg')"><p>Alle varer </p><span class="mobileHide">(Varierende Leveringstid)</span></button>
+            </div>
+            
+
+ 			<div id="materialevalg" class="vaelger vaelger0"> 
+            <p>Vælg Materialetype <img src="http://beringpetersen.dk/netto-2017/wp-content/uploads/billeder/arrow-down.png" class="arrow-down arrow-down0" /></p>
+            </div>
+            <div id="materialer" class="viser viser0">
+            </div>
+			
+            <div id="moenstervalg" class="vaelger vaelger1"> 
+            <p>Vælg Hul- og Delingstype <img src="http://beringpetersen.dk/netto-2017/wp-content/uploads/billeder/arrow-down.png" class="arrow-down arrow-down1" /></p>
+            </div>
+            <div id="moenster" class="viser viser1">
+            </div>
+            
+            <div id="stoerrelsevalg" class="vaelger vaelger2"> 
+            <p>Vælg Hulstørrelse <img src="http://beringpetersen.dk/netto-2017/wp-content/uploads/billeder/arrow-down.png" class="arrow-down arrow-down2" /></p>
+            </div>
+            <div id="stoerrelse" class="viser viser2">
+            </div>
+            
+            <div id="delingvalg" class="vaelger vaelger3"> 
+            <p>Vælg Deling <img src="http://beringpetersen.dk/netto-2017/wp-content/uploads/billeder/arrow-down.png" class="arrow-down arrow-down3" /></p>
+            </div>
+            <div id="deling" class="viser viser3">
+            </div>
+            
+            <div id="pladevalg" class="vaelger vaelger4">
+            <p>Vælg Plade <img src="http://beringpetersen.dk/netto-2017/wp-content/uploads/billeder/arrow-down.png" class="arrow-down arrow-down4" /></p>
+            </div>
+            <div id="tableDiv" class="viser viser4">
+            </div>
+            
+            <div id="pladeinfo" class="vaelger vaelger5">
+            <p>Valgte Plade <img src="http://beringpetersen.dk/netto-2017/wp-content/uploads/billeder/arrow-down.png" class="arrow-down arrow-down5" /></p>
+            </div>
+            <div id="plade" class="viser viser5">
+            </div>
+ 			
+ 			<div class="spacer"></div>
+            
+
+
+
+
+
+
+
+
+<!--/content-->
+</div>
+
+
+<footer class="footer">
+
+	<div id="footerIcon"><span class="fas big fa-address-book"></span></div>
+    <div id="footerText"><h4>Netto Perforering Skanderborg ApS<br>Sverigesvej 22 - 8660 Skanderborg<br>
+Tlf: 70 22 13 33<br> 
+Email: nettoperforering@nettoperforering.dk</h4></div>
+    <div id="footerImage"><img src="img/Logo_Skanderborg2.png" alt="Netto Perforering"></div>
+    
+
+</footer>
+
+
+<!--/page-->
+</div>
+
+
+
+<!-- Jquery Library -->
+<script src="js/jquery-3.2.1.min.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="js/bootstrap.js"></script>
+
+<!-- JavaScript/Jquery functions -->
+<script src="js/main.js"></script>
+
+
+
+</body>
+</html>
